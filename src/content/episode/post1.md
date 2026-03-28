@@ -4,7 +4,7 @@ audioUrl: https://www.cjmponline.ca/podcasting/get.php?web=j3985.mp3
 pubDate: 20 Dec 2025
 duration: 00:32
 size: 0.7
-cover: https://cawl.in/shimmer/covers/2025-12-18.png
+cover: null
 explicit: false
 episode: 1
 season: 1
