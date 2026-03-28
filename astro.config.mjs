@@ -1,6 +1,5 @@
 import { defineConfig } from "astro/config";
 import mdx from "@astrojs/mdx";
-import sitemap from "@astrojs/sitemap";
 import tailwind from "@astrojs/tailwind";
 import NetlifyCMS from "astro-netlify-cms";
 import dcapConfig from "./decap.config.mjs";
@@ -24,7 +23,6 @@ export default defineConfig({
       ],
     }),
     mdx(),
-    sitemap(),
     tailwind(),
     image({
       serviceEntryPoint: "@astrojs/image/sharp",
