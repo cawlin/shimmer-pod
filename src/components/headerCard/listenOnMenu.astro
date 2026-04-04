@@ -11,6 +11,7 @@ import FountainIcon from "../icons/fountainIcon.astro";
 import DeezerIcon from "../icons/deezerIcon.astro";
 import EasyPodcastIcon from "../icons/easyPodcastIcon.astro";
 import AcastPodcastsIcon from "../icons/acastPodcastsIcon.astro";
+import RssIcon from "../icons/rssIcon.astro";
 
 let hasListenOn = false 
 
@@ -23,10 +24,10 @@ for (const key in listenOn) {
 ---
 
 {hasListenOn && (
-  <div class="dropdown dropdown-hover dropdown-end">
+  <div class="dropdown dropdown-hover">
     <label tabindex="0" class="btn btn-ghost m-1 px-2 sm:px-4">
-      <HeadphoneIcon />
-      <span class="hidden md:inline-block">Listen on</span>
+      
+      <span class="hidden md:inline-block">Subscribe</span>
     </label>
     <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
       {listenOn.googlePodcast && (<li><a href={listenOn.googlePodcast}><GooglePodcastIcon />Google Podcast</a></li>)}
@@ -39,6 +40,7 @@ for (const key in listenOn) {
       {listenOn.fountain && (<li><a href={listenOn.fountain}><FountainIcon />Fountain</a></li>)}
       {listenOn.deezer && (<li><a href={listenOn.deezer}><DeezerIcon />Deezer</a></li>)}
       {listenOn.acastPodcasts && (<li><a href={listenOn.acastPodcasts}><AcastPodcastsIcon />Acast Podcasts</a></li>)}
+      <li><a href="/rss.xml" title="RSS Feed"><RssIcon />RSS Feed</a></li>
     </ul>
   </div>
 )}

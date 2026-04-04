@@ -10,11 +10,11 @@
   "owner": "",
   "favicon": "/favicon.svg",
   "explicit": false,
-  "cover": "/cover.jpg",
+  "cover": "https://the-shimmer-podcast.s3.us-west-2.amazonaws.com/images/shimmer-cover-small.jpg",
   "language": "en",
   "link": "https://theshimmer.netlify.app",
   "email": "colinsproule@gmail.com",
-  "description": "New ambient and ambient adjacent music weekly. Broadcast live in Qathet from cjmp.ca on Thursdays at 9:00pm PST.",
+  "description": "\nWeekly show bringing you new ambient and ambient adjacent releases. Hosted by Colin and broadcast live from Qathet on CJMP 90.1fm and CJMP.ca Thursdays at 9:0pm PST.",
   "category": [
     "Music"
   ],
