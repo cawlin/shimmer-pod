@@ -11,18 +11,38 @@ const explicitLabel = explicit === undefined ? astropodConfig.explicit : explici
 let cover_url = cover ? cover : astropodConfig.cover;
 ---
 
-<h1 class="mt-3 mb-3 text-lg md:text-4xl font-black text-white">{title}</h1>
+
+<div class="episode-card">
+  <div class="hero-content flex-row">
+    <a href="#" class="min-w-fit">
+      <img src={cover_url} class="rounded-md w-[4.5rem] h-[4.5rem] md:w-40 md:h-40" />
+    </a>
+    <div class="grow w-full">
+      <a href=#>
+        <h1 class="md:text-xl text-sm font-semibold truncate">
+          {title}
+        </h1>
+        <p class="my-1 text-xs md:text-sm line-clamp-2">Bringing you new ambient and ambient adjacent music every Thursday at 9:00pm PST on CJMP 90.1 FM.</p>
+        <nav>
+          <a href="/" class="m-1 btn btn-ghost">Episodes</a>
+          <a href="/about" class="bm-1 btn btn-ghost">About</a>
+          <ListenOnMenu />
+          <FollowUsMenu />
+        </nav>
+
+      </a>
+    </div>
+  </div>
+  <hr class="my-3 border-base-content opacity-[.15]" />
+</div>
+
+
+<!-- <h1 class="mt-3 mb-3 text-lg md:text-4xl font-black text-white">{title}</h1>
 <a href="/"><img
   alt={astropodConfig.name + "cover"}
   class="border-4 border-base-100 rounded-lg w-24 h-24 md:h-40 md:w-40"
   src={cover_url}
-/></a>
+/></a> -->
 
-<nav>
-  <a href="/" class="m-1 btn btn-ghost">Episodes</a>
-  <a href="/about" class="bm-1 btn btn-ghost">About</a>
-  <ListenOnMenu />
-  <FollowUsMenu />
-</nav>
 
-<p>New ambient and ambient adjacent music every Thursday at 9:00pm PST on <a href="https://cjmp.ca/">CJMP 90.1 FM</a>.</p>
+<!-- <p>New ambient and ambient adjacent music every Thursday at 9:00pm PST on <a href="https://cjmp.ca/">CJMP 90.1 FM</a>.</p> -->
