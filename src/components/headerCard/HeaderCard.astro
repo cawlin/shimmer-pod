@@ -14,26 +14,25 @@ let cover_url = cover ? cover : astropodConfig.cover;
 
 <div class="episode-card">
   <div class="hero-content flex-row">
-    <a href="#" class="min-w-fit">
-      <img src={cover_url} class="rounded-md w-[4.5rem] h-[4.5rem] md:w-40 md:h-40" />
+    <a href="/" class="min-w-fit">
+      <img src={cover_url} class="rounded-md w-40 h-40" />
     </a>
     <div class="grow w-full">
-      <a href=#>
+      <a href="/">
         <h1 class="md:text-xl text-sm font-semibold truncate">
           {title}
         </h1>
-        <p class="my-1 text-xs md:text-sm line-clamp-2">Bringing you new ambient and ambient adjacent music every Thursday at 9:00pm PST on CJMP 90.1 FM.</p>
+        <p class="mb-5 text-xs md:text-sm ">New ambient and ambient adjacent music every Thursday at 9:00pm PDT on <a href="https://cjmp.ca" class="link hover:no-underline">CJMP 90.1 FM</a>.</p>
+        </a>
         <nav>
-          <a href="/" class="m-1 btn btn-ghost">Episodes</a>
-          <a href="/about" class="bm-1 btn btn-ghost">About</a>
+          <!-- <a href="/" class="m-1 btn bg-transparent border-gray-600 hover:bg-gray-600">Episodes</a> -->
+          <!-- <a href="/about" class="bm-1 btn bg-transparent border-gray-600 hover:bg-gray-600">About</a> -->
           <ListenOnMenu />
           <FollowUsMenu />
         </nav>
-
-      </a>
     </div>
   </div>
-  <hr class="my-3 border-base-content opacity-[.15]" />
+
 </div>
 
 

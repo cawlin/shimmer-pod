@@ -25,9 +25,9 @@ for (const key in listenOn) {
 
 {hasListenOn && (
   <div class="dropdown dropdown-hover">
-    <label tabindex="0" class="btn btn-ghost m-1 px-2 sm:px-4">
+    <label tabindex="0" class="btn bg-transparent border-gray-600 hover:bg-gray-600 m-1 px-2">
       
-      <span class="hidden md:inline-block">Subscribe</span>
+      <span class="inline-block">Subscribe</span>
     </label>
     <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
       {listenOn.googlePodcast && (<li><a href={listenOn.googlePodcast}><GooglePodcastIcon />Google Podcast</a></li>)}

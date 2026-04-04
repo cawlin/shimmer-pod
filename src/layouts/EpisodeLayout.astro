@@ -14,20 +14,21 @@ let cover_url = cover ? cover : astropodConfig.cover;
 ---
 
 <BaseLayout title={`${title} - ${astropodConfig.name}`} description={description} image={cover}>
-<HeaderCard title={title} subtitle={astropodConfig.name} cover={cover} explicit={explicit} />
+<HeaderCard title={astropodConfig.name} explicit={explicit} />
+
+<hr class="my-3 border-base-content opacity-[.15]" />
 
   <main class="md:flex md:justify-center">
 
-    <article class="card prose min-w-full prose-img:mx-auto prose-p:mt-0 prose-ul:mt-0 prose-ol:mt-0 mt-6">
+    <article class="card prose min-w-full prose-p:mt-0 prose-ul:mt-0 prose-ol:mt-0 mt-6 p-4">
 
-  <div class="hero-content flex-row p-0">
-      <img src={cover_url} class="rounded-md w-[4.5rem] h-[4.5rem] md:w-40 md:h-40" />
-    <div class="grow w-full overflow-auto">
-        <h2 class="font-semibold">
+      <img src={cover_url} class="rounded-md w-40 h-40 my-0" />
+
+      <h2 class="font-semibold my-4">
           {title}
         </h2>
-    </div>
-  </div>
+      
+      
 
       <slot />
     </article>
